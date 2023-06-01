@@ -1,7 +1,7 @@
 
-# Default Agence Pathère
+# Default Agence Panthère
 
-Version initiale de l'agence pathère a Lyon.
+Version initiale de l'agence panthère a Lyon.
 
 
 ## Demo
