@@ -1,16 +1,36 @@
+.d-bloc .navbar-toggle .icon-bar,
 body {
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow-x: hidden;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
+	background: #fff
+}
+
+.bloc .container,
+.row.row-no-gutters>[class*=" col-"],
+.row.row-no-gutters>[class^=col-] {
+	padding-right: 0;
+	padding-left: 0
+}
+
+.nav-center .navbar-brand img,
+body {
+	margin: 0
 }
 
 a,
 button {
-	transition: all .3s ease-in-out;
 	outline: 0 !important
+}
+
+.scrollToTop,
+a,
+button {
+	transition: .3s ease-in-out
+}
+
+body {
+	padding: 0;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
 }
 
 a:hover {
@@ -21,18 +41,12 @@ a:hover {
 .bloc {
 	width: 100%;
 	clear: both;
-	background: 50% 50% no-repeat;
+	background: 50% 50%/cover no-repeat;
 	padding: 0 50px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
 	position: relative
-}
-
-.bloc .container {
-	padding-left: 0;
-	padding-right: 0
 }
 
 .bloc-lg {
@@ -60,8 +74,10 @@ a:hover {
 	background-size: auto !important
 }
 
-.bg-repeat {
-	background: repeat
+.bg-repeat,
+.nav>li a:focus,
+.nav>li a:hover {
+	background: 0 0
 }
 
 .bg-t-edge {
@@ -79,8 +95,12 @@ a:hover {
 }
 
 .texture-paper::before {
-	background: url(https://neeemos.github.io/AgencePanthereDefault/img/texture-paper.png);
-	background-size: 280px 280px
+	background: url(../img/texture-paper.png) 0 0/280px 280px
+}
+
+.nav>li>.dropdown a,
+.navbar-toggle:hover {
+	background: 0 0 !important
 }
 
 .b-parallax {
@@ -124,11 +144,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-	color: rgba(255, 255, 255, 1)
-}
-
-.d-bloc .navbar-toggle .icon-bar {
-	background: rgba(255, 255, 255, 1)
+	color: #fff
 }
 
 .l-bloc {
@@ -142,6 +158,7 @@ a:hover {
 .l-bloc .a-btn,
 .l-bloc .navbar a,
 .l-bloc .navbar-brand,
+.l-bloc .navbar-toggle .icon-bar,
 .l-bloc a .icon-lg,
 .l-bloc a .icon-md,
 .l-bloc a .icon-sm,
@@ -168,11 +185,7 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-	color: rgba(0, 0, 0, 1)
-}
-
-.l-bloc .navbar-toggle .icon-bar {
-	color: rgba(0, 0, 0, .6)
+	color: #000
 }
 
 .voffset {
@@ -188,12 +201,6 @@ a:hover {
 	margin-left: 0
 }
 
-.row.row-no-gutters>[class*=" col-"],
-.row.row-no-gutters>[class^=col-] {
-	padding-right: 0;
-	padding-left: 0
-}
-
 #bloc-1-hero h1 {
 	font-size: 32px
 }
@@ -207,7 +214,6 @@ a:hover {
 	height: auto;
 	padding: 3px 15px;
 	font-size: 25px;
-	font-weight: 400;
 	font-weight: 600;
 	line-height: 44px
 }
@@ -220,10 +226,6 @@ a:hover {
 
 .navbar-brand img[src$=svg] {
 	min-width: 100px
-}
-
-.nav-center .navbar-brand img {
-	margin: 0
 }
 
 .navbar .nav {
@@ -239,18 +241,14 @@ a:hover {
 	font-size: 16px
 }
 
-.nav>li a:focus,
-.nav>li a:hover {
-	background: 0 0
-}
-
 .navbar-toggle {
 	margin: 10px 10px 0 0;
 	border: 0
 }
 
-.navbar-toggle:hover {
-	background: 0 0 !important
+.mg-lg,
+.mg-md {
+	margin-top: 10px
 }
 
 .navbar-toggle .icon-bar {
@@ -292,18 +290,15 @@ a:hover {
 }
 
 .nav>li>.dropdown a {
-	background: 0 0 !important;
 	display: block;
 	padding: 14px 15px
 }
 
 .mg-md {
-	margin-top: 10px;
 	margin-bottom: 20px
 }
 
 .mg-lg {
-	margin-top: 10px;
 	margin-bottom: 40px
 }
 
@@ -316,10 +311,6 @@ a:hover {
 .btn-d:hover {
 	color: #fff;
 	background: rgba(0, 0, 0, .3)
-}
-
-button {
-	outline: 0 !important
 }
 
 .btn-rd {
@@ -357,8 +348,7 @@ button {
 	bottom: 20px;
 	right: 20px;
 	opacity: 0;
-	z-index: 500;
-	transition: all .3s ease-in-out
+	z-index: 500
 }
 
 .scrollToTop span {
@@ -426,6 +416,25 @@ p {
 	color: #575757 !important
 }
 
+.cta-hero,
+h3 {
+	text-transform: uppercase;
+	font-weight: 700
+}
+
+h1,
+h3,
+h4 {
+	color: #333 !important
+}
+
+.btn-atomic-tangerine,
+.cta-hero,
+.tc-white,
+.white {
+	color: #fff !important
+}
+
 .container {
 	max-width: 1000px
 }
@@ -440,7 +449,7 @@ p {
 
 .tight-width-whitespace {
 	max-width: 600px;
-	margin: auto auto auto auto
+	margin: auto
 }
 
 .h1 {
@@ -450,16 +459,13 @@ p {
 
 .cta-hero {
 	margin-top: 22px;
-	color: #fff !important;
-	text-transform: uppercase;
-	padding: 12px 28px 12px 28px;
-	font-size: 16px;
-	font-weight: 700
+	padding: 12px 28px;
+	font-size: 16px
 }
 
 .social {
 	max-width: 400px;
-	margin: auto auto 15px auto
+	margin: auto auto 15px
 }
 
 h2 {
@@ -468,24 +474,13 @@ h2 {
 }
 
 h3 {
-	font-size: 15px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #333 !important
+	font-size: 15px
 }
 
 .med-width-whitespace {
 	max-width: 800px;
-	margin: auto auto auto auto;
+	margin: auto;
 	box-shadow: 0 0 0 #000
-}
-
-h1 {
-	color: #333 !important
-}
-
-h4 {
-	color: #333 !important
 }
 
 .icons {
@@ -494,7 +489,6 @@ h4 {
 }
 
 .white {
-	color: #fff !important;
 	font-size: medium
 }
 
@@ -510,7 +504,7 @@ h4 {
 
 .black-background {
 	background-color: rgba(165, 147, 99, .7);
-	padding: 40px 40px 40px 40px
+	padding: 40px
 }
 
 .bgc-white {
@@ -525,13 +519,8 @@ h4 {
 	background-color: #8c3c11
 }
 
-.tc-white {
-	color: #fff !important
-}
-
 .btn-atomic-tangerine {
-	background-color: #913c12;
-	color: #fff !important
+	background-color: #913c12
 }
 
 .btn-atomic-tangerine:hover {
@@ -545,19 +534,19 @@ h4 {
 }
 
 .bg-dots-bg {
-	background-image: url(https://neeemos.github.io/AgencePanthereDefault/img/dots-bg.png)
+	background-image: url(../img/dots-bg.png)
 }
 
 .bg-lines-h2-bg {
-	background-image: url(https://neeemos.github.io/AgencePanthereDefault/img/lines-h2-bg.png)
+	background-image: url(../img/lines-h2-bg.png)
 }
 
 .bg-banniere {
-	background-image: url(https://neeemos.github.io/AgencePanthereDefault/img/agence-la-panthere.avif)
+	background-image: url(../img/agence-la-panthere.avif)
 }
 
 .bg-presentation {
-	background-image: url(https://neeemos.github.io/AgencePanthereDefault/img/image-de-presentation.webp)
+	background-image: url(../img/image-de-presentation.webp)
 }
 
 @media (max-width:1024px) {
@@ -577,13 +566,13 @@ h4 {
 	}
 }
 
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
 	.b-parallax {
 		background-attachment: scroll
 	}
 }
 
-@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:1.5) {
+@media only screen and (min-width:1024px) and (max-width:1366px) and (-webkit-min-device-pixel-ratio:1.5) {
 	.b-parallax {
 		background-attachment: scroll
 	}
@@ -605,8 +594,8 @@ h4 {
 	}
 
 	.bloc {
-		padding-left: constant(safe-area-inset-left);
-		padding-right: constant(safe-area-inset-right)
+		padding-left: 0;
+		padding-right: 0
 	}
 
 	.bloc-group,
@@ -614,6 +603,56 @@ h4 {
 		display: block;
 		width: 100%
 	}
+}
+
+@media (max-width:400px) {
+	.bloc {
+		padding-left: 0;
+		padding-right: 0
+	}
+}
+
+.content {
+	display: flex;
+	justify-content: center
+}
+
+.portfolio-block .resized {
+	width: 45% !important
+}
+
+.resized {
+	width: 65% !important
+}
+
+@media (max-width:768px) {
+	.portfolio-block .resized {
+		width: 65% !important
+	}
+
+	.resized {
+		width: 100% !important
+	}
+}
+
+.text-center .custom-paragraph {
+	font-size: 1.4em
+}
+
+.text-center .custom-italic {
+	font-style: italic;
+	font-size: 1.2em
+}
+
+.bloc-8 .col-sm-12 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column
+}
+
+.bloc-8 .col-sm-12 .row.row-no-gutters.social {
+	justify-content: space-between;
+	margin-bottom: 20px !important
 }
 
 @media (max-width:767px) {
@@ -697,19 +736,15 @@ h4 {
 		width: auto
 	}
 
-	.bloc {
+	.bloc,
+	.bloc-md,
+	.bloc-sm {
 		padding-left: 0;
 		padding-right: 0
 	}
 
 	.bloc-lg {
 		padding: 40px 0
-	}
-
-	.bloc-md,
-	.bloc-sm {
-		padding-left: 0;
-		padding-right: 0
 	}
 
 	.a-block {
@@ -731,61 +766,7 @@ h4 {
 	form {
 		padding: 5px
 	}
-}
 
-@media (max-width:400px) {
-	.bloc {
-		padding-left: 0;
-		padding-right: 0
-	}
-}
-
-.content {
-	display: flex;
-	justify-content: center
-}
-
-.portfolio-block .resized {
-	width: 45% !important
-}
-
-@media (max-width:768px) {
-	.portfolio-block .resized {
-		width: 65% !important
-	}
-}
-
-.resized {
-	width: 65% !important
-}
-
-@media (max-width:768px) {
-	.resized {
-		width: 100% !important
-	}
-}
-
-.text-center .custom-paragraph {
-	font-size: 1.4em
-}
-
-.text-center .custom-italic {
-	font-style: italic;
-	font-size: 1.2em
-}
-
-.bloc-8 .col-sm-12 {
-	display: flex;
-	justify-content: center;
-	flex-direction: column
-}
-
-.bloc-8 .col-sm-12 .row.row-no-gutters.social {
-	justify-content: space-between;
-	margin-bottom: 20px !important
-}
-
-@media (max-width:767px) {
 	.row.row-no-gutters {
 		display: flex;
 		flex-direction: row;
@@ -801,11 +782,13 @@ h4 {
 .row-no-gutters .keywords {
 	color: #f3976c
 }
+
 .info-box {
 	position: absolute;
 	right: -5%;
-	top: 20%;
+	top: 20%
 }
+
 .info-text {
-	font-size: 24px;
+	font-size: 24px
 }
