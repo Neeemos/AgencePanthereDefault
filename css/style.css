@@ -435,7 +435,7 @@ p {
 }
 
 p {
-	font-size: 11px
+	font-size: 12px
 }
 
 .tight-width-whitespace {
@@ -800,4 +800,12 @@ h4 {
 
 .row-no-gutters .keywords {
 	color: #f3976c
+}
+.info-box {
+	position: absolute;
+	right: -5%;
+	top: 20%;
+}
+.info-text {
+	font-size: 24px;
 }
